@@ -15,7 +15,7 @@ allprojects {
 Luego agrega la dependencia de la librería.
 ```gradle
 dependencies {
-    implementation 'com.github.beAndroid:belibrary:v1.1'
+    implementation 'com.github.beAndroid:belibrary:v1.2'
 	}
 ```
 ## Iniciar el escaneo de Beacon.
