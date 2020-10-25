@@ -40,6 +40,6 @@ dependencies {
     implementation 'com.github.beAndroid:belibrary:v1.0'
 
 
-   // implementation project(":belibrary")
+   //implementation project(":belibrary")
 
 }

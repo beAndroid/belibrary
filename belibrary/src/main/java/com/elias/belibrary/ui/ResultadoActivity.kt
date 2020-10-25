@@ -136,9 +136,11 @@ class ResultadoActivity : AppCompatActivity(), BeaconConsumer {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
         if(requestCode == 1033){
-            if (grantResults.isNotEmpty()
-                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startScan()
+            }else{
+                DebugClass.logError("Permisos no concedidos")
+                finish()
             }
         }
     }
