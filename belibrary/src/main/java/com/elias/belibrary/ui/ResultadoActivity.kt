@@ -98,9 +98,9 @@ class ResultadoActivity : AppCompatActivity(), BeaconConsumer {
 
                 try {
                     DebugClass.logInfo("id2          ${beacon.id2}")
-                    major = beacon.id3.toString()
+                    major = beacon.id2.toString()
                     DebugClass.logInfo("id3          ${beacon.id3}")
-                    menor  = beacon.id2.toString()
+                    menor  = beacon.id3.toString()
                 }catch (e : Exception){
                     DebugClass.logError("Error onBeaconServiceConnect - id2-id3 $major - $menor")
                 }
